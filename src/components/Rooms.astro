@@ -1,22 +1,52 @@
 ---
-import 'swiper/css';
-import 'swiper/css/effect-fade';
+import "swiper/css";
+import "swiper/css/effect-fade";
 ---
 
 <section id="rooms" class="py-24 bg-white relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12 fade-up">
-            <span class="text-brand-button uppercase tracking-widest text-sm font-bold mb-3 block">Interiors</span>
-            <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-dark">Explore The Spaces</h2>
+            <span
+                class="text-brand-button uppercase tracking-widest text-sm font-bold mb-3 block"
+                >Interiors</span
+            >
+            <h2
+                class="text-3xl md:text-5xl font-serif font-bold text-brand-dark"
+            >
+                Explore The Spaces
+            </h2>
         </div>
 
         <!-- Custom Tab Navigation -->
-        <div class="flex flex-wrap justify-center gap-2 md:gap-8 mb-12 border-b border-gray-200 fade-up" id="room-tabs-container">
-            <button data-index="0" class="room-tab px-6 py-4 text-sm md:text-base font-medium text-gray-400 hover:text-brand-primary transition-all uppercase tracking-wide active">Living Room</button>
-            <button data-index="1" class="room-tab px-6 py-4 text-sm md:text-base font-medium text-gray-400 hover:text-brand-primary transition-all uppercase tracking-wide">Dining</button>
-            <button data-index="2" class="room-tab px-6 py-4 text-sm md:text-base font-medium text-gray-400 hover:text-brand-primary transition-all uppercase tracking-wide">Kitchen</button>
-            <button data-index="3" class="room-tab px-6 py-4 text-sm md:text-base font-medium text-gray-400 hover:text-brand-primary transition-all uppercase tracking-wide">Master Bedroom</button>
-            <button data-index="4" class="room-tab px-6 py-4 text-sm md:text-base font-medium text-gray-400 hover:text-brand-primary transition-all uppercase tracking-wide">Bathroom</button>
+        <div
+            class="flex flex-wrap justify-center gap-2 md:gap-8 mb-12 border-b border-gray-200 fade-up"
+            id="room-tabs-container"
+        >
+            <button
+                data-index="0"
+                class="room-tab px-6 py-4 text-sm md:text-base font-medium text-gray-400 hover:text-brand-primary transition-all uppercase tracking-wide active"
+                >Living Room</button
+            >
+            <button
+                data-index="1"
+                class="room-tab px-6 py-4 text-sm md:text-base font-medium text-gray-400 hover:text-brand-primary transition-all uppercase tracking-wide"
+                >Dining</button
+            >
+            <button
+                data-index="2"
+                class="room-tab px-6 py-4 text-sm md:text-base font-medium text-gray-400 hover:text-brand-primary transition-all uppercase tracking-wide"
+                >Kitchen</button
+            >
+            <button
+                data-index="3"
+                class="room-tab px-6 py-4 text-sm md:text-base font-medium text-gray-400 hover:text-brand-primary transition-all uppercase tracking-wide"
+                >Master Bedroom</button
+            >
+            <button
+                data-index="4"
+                class="room-tab px-6 py-4 text-sm md:text-base font-medium text-gray-400 hover:text-brand-primary transition-all uppercase tracking-wide"
+                >Bathroom</button
+            >
         </div>
 
         <!-- Swiper Slider -->
@@ -25,19 +55,57 @@ import 'swiper/css/effect-fade';
                 <!-- Slide 1: Living Room -->
                 <div class="swiper-slide">
                     <div class="flex flex-col lg:flex-row gap-10 lg:h-[600px]">
-                        <div class="w-full lg:w-2/3 h-96 lg:h-full relative overflow-hidden rounded-sm group">
-                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Living Room">
-                            <div class="absolute bottom-6 left-6 bg-brand-primary/95 backdrop-blur px-6 py-3 rounded-sm shadow-md border-l-4 border-brand-button">
-                                <p class="text-white font-serif font-bold">Panoramic Views</p>
+                        <div
+                            class="w-full lg:w-2/3 h-96 lg:h-full relative overflow-hidden rounded-sm group"
+                        >
+                            <img
+                                src="/images/room-living.jpg"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="Living Room"
+                            />
+                            <div
+                                class="absolute bottom-6 left-6 bg-brand-primary/95 backdrop-blur px-6 py-3 rounded-sm shadow-md border-l-4 border-brand-button"
+                            >
+                                <p class="text-white font-serif font-bold">
+                                    Panoramic Views
+                                </p>
                             </div>
                         </div>
-                        <div class="w-full lg:w-1/3 flex flex-col justify-center p-4">
-                            <h3 class="text-3xl font-serif font-bold text-brand-primary mb-6">The Living Room</h3>
-                            <p class="text-gray-600 mb-8 leading-relaxed font-light">Open concept living spaces designed for gathering. Featuring floor-to-ceiling double-pane windows, white oak flooring, and custom recessed lighting.</p>
+                        <div
+                            class="w-full lg:w-1/3 flex flex-col justify-center p-4"
+                        >
+                            <h3
+                                class="text-3xl font-serif font-bold text-brand-primary mb-6"
+                            >
+                                The Living Room
+                            </h3>
+                            <p
+                                class="text-gray-600 mb-8 leading-relaxed font-light"
+                            >
+                                Open concept living spaces designed for
+                                gathering. Featuring floor-to-ceiling
+                                double-pane windows, white oak flooring, and
+                                custom recessed lighting.
+                            </p>
                             <ul class="space-y-4">
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> 12ft Ceilings</li>
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Smart Climate Control</li>
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Motorized Shades</li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> 12ft Ceilings
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Smart Climate Control
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Motorized Shades
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -45,16 +113,49 @@ import 'swiper/css/effect-fade';
                 <!-- Slide 2: Dining Room -->
                 <div class="swiper-slide">
                     <div class="flex flex-col lg:flex-row gap-10 lg:h-[600px]">
-                        <div class="w-full lg:w-2/3 h-96 lg:h-full relative overflow-hidden rounded-sm group">
-                            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Dining Room">
+                        <div
+                            class="w-full lg:w-2/3 h-96 lg:h-full relative overflow-hidden rounded-sm group"
+                        >
+                            <img
+                                src="/images/room-dining.jpg"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="Dining Room"
+                            />
                         </div>
-                        <div class="w-full lg:w-1/3 flex flex-col justify-center p-4">
-                            <h3 class="text-3xl font-serif font-bold text-brand-primary mb-6">Formal Dining</h3>
-                            <p class="text-gray-600 mb-8 leading-relaxed font-light">An elegant space for entertaining. The dining area seamlessly connects to the kitchen while maintaining a sense of intimacy.</p>
+                        <div
+                            class="w-full lg:w-1/3 flex flex-col justify-center p-4"
+                        >
+                            <h3
+                                class="text-3xl font-serif font-bold text-brand-primary mb-6"
+                            >
+                                Formal Dining
+                            </h3>
+                            <p
+                                class="text-gray-600 mb-8 leading-relaxed font-light"
+                            >
+                                An elegant space for entertaining. The dining
+                                area seamlessly connects to the kitchen while
+                                maintaining a sense of intimacy.
+                            </p>
                             <ul class="space-y-4">
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Designer Chandelier</li>
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Wine Storage</li>
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Seats up to 12</li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Designer Chandelier
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Wine Storage
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Seats up to 12
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -62,16 +163,49 @@ import 'swiper/css/effect-fade';
                 <!-- Slide 3: Kitchen -->
                 <div class="swiper-slide">
                     <div class="flex flex-col lg:flex-row gap-10 lg:h-[600px]">
-                        <div class="w-full lg:w-2/3 h-96 lg:h-full relative overflow-hidden rounded-sm group">
-                            <img src="https://images.unsplash.com/photo-1556912173-3db9963eecc4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Kitchen">
+                        <div
+                            class="w-full lg:w-2/3 h-96 lg:h-full relative overflow-hidden rounded-sm group"
+                        >
+                            <img
+                                src="/images/room-kitchen.jpg"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="Kitchen"
+                            />
                         </div>
-                        <div class="w-full lg:w-1/3 flex flex-col justify-center p-4">
-                            <h3 class="text-3xl font-serif font-bold text-brand-primary mb-6">Chef's Kitchen</h3>
-                            <p class="text-gray-600 mb-8 leading-relaxed font-light">A culinary masterpiece equipped with professional-grade appliances and sustainable materials.</p>
+                        <div
+                            class="w-full lg:w-1/3 flex flex-col justify-center p-4"
+                        >
+                            <h3
+                                class="text-3xl font-serif font-bold text-brand-primary mb-6"
+                            >
+                                Chef's Kitchen
+                            </h3>
+                            <p
+                                class="text-gray-600 mb-8 leading-relaxed font-light"
+                            >
+                                A culinary masterpiece equipped with
+                                professional-grade appliances and sustainable
+                                materials.
+                            </p>
                             <ul class="space-y-4">
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Marble Island</li>
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Miele Appliances</li>
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Walk-in Pantry</li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Marble Island
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Miele Appliances
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Walk-in Pantry
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -79,16 +213,49 @@ import 'swiper/css/effect-fade';
                 <!-- Slide 4: Master Bedroom -->
                 <div class="swiper-slide">
                     <div class="flex flex-col lg:flex-row gap-10 lg:h-[600px]">
-                        <div class="w-full lg:w-2/3 h-96 lg:h-full relative overflow-hidden rounded-sm group">
-                            <img src="https://images.unsplash.com/photo-1616594039964-40891a909d93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Master Bedroom">
+                        <div
+                            class="w-full lg:w-2/3 h-96 lg:h-full relative overflow-hidden rounded-sm group"
+                        >
+                            <img
+                                src="/images/room-bedroom.jpg"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="Master Bedroom"
+                            />
                         </div>
-                        <div class="w-full lg:w-1/3 flex flex-col justify-center p-4">
-                            <h3 class="text-3xl font-serif font-bold text-brand-primary mb-6">Master Sanctuary</h3>
-                            <p class="text-gray-600 mb-8 leading-relaxed font-light">Your private retreat. Designed for rest and rejuvenation with sound-dampening walls and soft, ambient lighting.</p>
+                        <div
+                            class="w-full lg:w-1/3 flex flex-col justify-center p-4"
+                        >
+                            <h3
+                                class="text-3xl font-serif font-bold text-brand-primary mb-6"
+                            >
+                                Master Sanctuary
+                            </h3>
+                            <p
+                                class="text-gray-600 mb-8 leading-relaxed font-light"
+                            >
+                                Your private retreat. Designed for rest and
+                                rejuvenation with sound-dampening walls and
+                                soft, ambient lighting.
+                            </p>
                             <ul class="space-y-4">
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Private Balcony</li>
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Walk-in Closet</li>
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Sitting Area</li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Private Balcony
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Walk-in Closet
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Sitting Area
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -96,16 +263,49 @@ import 'swiper/css/effect-fade';
                 <!-- Slide 5: Bathroom -->
                 <div class="swiper-slide">
                     <div class="flex flex-col lg:flex-row gap-10 lg:h-[600px]">
-                        <div class="w-full lg:w-2/3 h-96 lg:h-full relative overflow-hidden rounded-sm group">
-                            <img src="https://images.unsplash.com/photo-1620626012053-1c1a963b469b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Bathroom">
+                        <div
+                            class="w-full lg:w-2/3 h-96 lg:h-full relative overflow-hidden rounded-sm group"
+                        >
+                            <img
+                                src="/images/room-bathroom.jpg"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                alt="Bathroom"
+                            />
                         </div>
-                        <div class="w-full lg:w-1/3 flex flex-col justify-center p-4">
-                            <h3 class="text-3xl font-serif font-bold text-brand-primary mb-6">Spa Bathroom</h3>
-                            <p class="text-gray-600 mb-8 leading-relaxed font-light">Start and end your day in luxury. Featuring heated floors, rain showers, and deep soaking tubs.</p>
+                        <div
+                            class="w-full lg:w-1/3 flex flex-col justify-center p-4"
+                        >
+                            <h3
+                                class="text-3xl font-serif font-bold text-brand-primary mb-6"
+                            >
+                                Spa Bathroom
+                            </h3>
+                            <p
+                                class="text-gray-600 mb-8 leading-relaxed font-light"
+                            >
+                                Start and end your day in luxury. Featuring
+                                heated floors, rain showers, and deep soaking
+                                tubs.
+                            </p>
                             <ul class="space-y-4">
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Rain Shower</li>
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Freestanding Tub</li>
-                                <li class="flex items-center gap-3 text-gray-800"><i class="fas fa-check text-brand-button"></i> Stone Vanity</li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Rain Shower
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Freestanding Tub
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 text-gray-800"
+                                >
+                                    <i class="fas fa-check text-brand-button"
+                                    ></i> Stone Vanity
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -116,8 +316,8 @@ import 'swiper/css/effect-fade';
 </section>
 
 <script>
-    import Swiper from 'swiper';
-    import { EffectFade } from 'swiper/modules';
+    import Swiper from "swiper";
+    import { EffectFade } from "swiper/modules";
 
     // 1. Swiper Initialization
     const swiper = new Swiper(".roomSwiper", {
@@ -130,30 +330,30 @@ import 'swiper/css/effect-fade';
     });
 
     // 2. Tab Logic linked to Swiper
-    const tabs = document.querySelectorAll<HTMLElement>('.room-tab');
+    const tabs = document.querySelectorAll<HTMLElement>(".room-tab");
 
     function updateTabs(activeIndex: number) {
         tabs.forEach((tab, index) => {
             if (index === activeIndex) {
-                tab.classList.add('active');
-                tab.classList.remove('text-gray-400');
-                tab.classList.add('text-brand-primary');
+                tab.classList.add("active");
+                tab.classList.remove("text-gray-400");
+                tab.classList.add("text-brand-primary");
             } else {
-                tab.classList.remove('active');
-                tab.classList.add('text-gray-400');
-                tab.classList.remove('text-brand-primary');
+                tab.classList.remove("active");
+                tab.classList.add("text-gray-400");
+                tab.classList.remove("text-brand-primary");
             }
         });
     }
 
     tabs.forEach((tab, index) => {
-        tab.addEventListener('click', () => {
-             swiper.slideTo(index);
-             updateTabs(index); // Manually update tabs on click to be immediate
+        tab.addEventListener("click", () => {
+            swiper.slideTo(index);
+            updateTabs(index); // Manually update tabs on click to be immediate
         });
     });
 
-    swiper.on('slideChange', function () {
+    swiper.on("slideChange", function () {
         updateTabs(swiper.activeIndex);
     });
 </script>
