@@ -1,0 +1,73 @@
+---
+---
+<section id="home" class="hero-bg h-screen flex items-center justify-center relative overflow-hidden">
+    <div class="text-center px-4 max-w-5xl mx-auto relative z-10">
+        <!-- Badge -->
+        <div class="fade-up" style="transition-delay: 100ms;">
+            <span class="uppercase tracking-[0.3em] text-sm md:text-base font-bold mb-6 bg-brand-primary/80 backdrop-blur-md inline-block px-4 py-1 rounded-full border border-brand-light/20 shadow-sm text-white">
+                Deep Luxury Living
+            </span>
+        </div>
+
+        <!-- Masked Heading Reveal -->
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-lg">
+            <div class="text-reveal-container">
+                <span class="text-reveal" style="transition-delay: 200ms;">Timeless</span>
+            </div>
+            <br />
+            <div class="text-reveal-container">
+                <span class="text-reveal text-brand-button italic" style="transition-delay: 350ms;">Elegance</span>
+            </div>
+        </h1>
+
+        <p class="fade-up text-gray-200 text-lg md:text-xl mb-12 font-light max-w-2xl mx-auto" style="transition-delay: 500ms;">
+            A sanctuary of calm in the heart of the city. Defined by deep teal tones, copper accents, and sustainable luxury.
+        </p>
+
+        <div class="fade-up flex flex-col sm:flex-row gap-5 justify-center" style="transition-delay: 600ms;">
+            <a href="#rooms" class="btn-luxury px-8 py-4 bg-brand-button text-white uppercase tracking-wider text-sm font-semibold hover:bg-brand-buttonHover rounded-sm shadow-xl flex items-center justify-center gap-2">
+                View Residences <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#building" class="btn-luxury px-8 py-4 bg-transparent border border-white text-white uppercase tracking-wider text-sm font-semibold hover:bg-white hover:text-brand-primary transition-all duration-300 rounded-sm">
+                Explore Building
+            </a>
+        </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce fade-up" style="transition-delay: 800ms;">
+        <a href="#building" class="text-white/70 hover:text-brand-button transition-colors p-4">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </a>
+    </div>
+</section>
+
+<script>
+    // Intersection Observer for animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                if (entry.target.classList.contains('stagger-parent')) {
+                    const children = entry.target.querySelectorAll('.stagger-item');
+                    children.forEach((child, index) => {
+                        setTimeout(() => {
+                            child.classList.add('in-view');
+                        }, index * 100);
+                    });
+                }
+            }
+        });
+    }, observerOptions);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const animatedElements = document.querySelectorAll('.fade-up, .text-reveal, .stagger-parent');
+        animatedElements.forEach(el => observer.observe(el));
+    });
+</script>

@@ -1,0 +1,82 @@
+---
+---
+<section id="contact" class="bg-white text-black relative pt-24 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div class="flex flex-col lg:flex-row gap-20">
+            <!-- Contact Info -->
+            <div class="lg:w-1/3 fade-up">
+                <span class="text-brand-button uppercase tracking-widest text-sm font-bold mb-4 block">Get In Touch</span>
+                <h2 class="text-4xl font-serif font-bold mb-8 text-brand-primary">Visit Cemara</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed font-light">
+                    We invite you to experience Cemara firsthand. Schedule a private viewing with our sales team.
+                </p>
+
+                <div class="space-y-8 stagger-parent">
+                    <div class="stagger-item flex items-start gap-5 group">
+                        <div class="w-10 h-10 rounded-full bg-brand-primary/5 flex items-center justify-center group-hover:bg-brand-button transition-colors duration-300">
+                            <i class="fas fa-map-marker-alt text-brand-button group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-serif font-medium text-lg text-brand-primary">Address</h5>
+                            <p class="text-gray-500 text-sm mt-1">123 Green Way, Eco District<br>New York, NY 10012</p>
+                        </div>
+                    </div>
+                    <div class="stagger-item flex items-start gap-5 group">
+                        <div class="w-10 h-10 rounded-full bg-brand-primary/5 flex items-center justify-center group-hover:bg-brand-button transition-colors duration-300">
+                            <i class="fas fa-phone-alt text-brand-button group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-serif font-medium text-lg text-brand-primary">Phone</h5>
+                            <p class="text-gray-500 text-sm mt-1">+1 (212) 555-0123</p>
+                        </div>
+                    </div>
+                    <div class="stagger-item flex items-start gap-5 group">
+                        <div class="w-10 h-10 rounded-full bg-brand-primary/5 flex items-center justify-center group-hover:bg-brand-button transition-colors duration-300">
+                            <i class="fas fa-envelope text-brand-button group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-serif font-medium text-lg text-brand-primary">Email</h5>
+                            <p class="text-gray-500 text-sm mt-1">sales@cemara.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:w-2/3 bg-gray-50 p-8 md:p-12 border border-gray-200 rounded-sm relative fade-up" style="transition-delay: 200ms;">
+                <!-- Form Corner Decoration -->
+                <div class="absolute top-0 right-0 w-20 h-20 border-t-2 border-r-2 border-brand-button rounded-tr-3xl"></div>
+
+                <form onsubmit="event.preventDefault(); alert('Thank you for your inquiry! We will contact you shortly.');">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div class="relative group">
+                            <input type="text" class="w-full bg-transparent border-b border-gray-300 text-black py-3 focus:outline-none focus:border-brand-button transition-colors peer" placeholder=" ">
+                            <label class="absolute left-0 top-3 text-gray-400 text-sm transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-brand-button peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-xs">First Name</label>
+                        </div>
+                        <div class="relative group">
+                            <input type="text" class="w-full bg-transparent border-b border-gray-300 text-black py-3 focus:outline-none focus:border-brand-button transition-colors peer" placeholder=" ">
+                            <label class="absolute left-0 top-3 text-gray-400 text-sm transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-brand-button peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-xs">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div class="relative group">
+                            <input type="email" class="w-full bg-transparent border-b border-gray-300 text-black py-3 focus:outline-none focus:border-brand-button transition-colors peer" placeholder=" ">
+                            <label class="absolute left-0 top-3 text-gray-400 text-sm transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-brand-button peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-xs">Email</label>
+                        </div>
+                        <div class="relative group">
+                            <input type="tel" class="w-full bg-transparent border-b border-gray-300 text-black py-3 focus:outline-none focus:border-brand-button transition-colors peer" placeholder=" ">
+                            <label class="absolute left-0 top-3 text-gray-400 text-sm transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-brand-button peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-xs">Phone</label>
+                        </div>
+                    </div>
+                    <div class="mb-10 relative group">
+                        <textarea rows="4" class="w-full bg-transparent border-b border-gray-300 text-black py-3 focus:outline-none focus:border-brand-button transition-colors peer" placeholder=" "></textarea>
+                        <label class="absolute left-0 top-3 text-gray-400 text-sm transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-brand-button peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-xs">Message</label>
+                    </div>
+                    <button class="btn-luxury w-full md:w-auto px-12 py-4 bg-brand-button hover:bg-brand-buttonHover text-white uppercase tracking-wider text-sm font-semibold rounded-sm shadow-lg">
+                        Send Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
